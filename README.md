@@ -1,5 +1,7 @@
-# Getting Started with Create React App
+### [Live Deplyed Site](https://friend-gpt.netlify.app/)
+#### Health status [![Netlify Status](https://api.netlify.com/api/v1/badges/aadd139a-bf20-484d-99dd-a899aaf8c91a/deploy-status)](https://app.netlify.com/sites/friend-gpt/deploys)
 
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

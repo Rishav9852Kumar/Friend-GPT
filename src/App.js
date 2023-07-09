@@ -1,13 +1,30 @@
 import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Form from './Components/Form';
+import gptFriendLogo from './gpt_friend1.jpg';
 
 function App() {
+  const [name, setName] = useState('');
+  const [text, setText] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Perform any necessary actions with the submitted data
+    console.log('Name:', name);
+    console.log('Text:', text);
+    // Reset the form
+    setName('');
+    setText('');
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={gptFriendLogo} className="App-logo" alt="logo" />
+        <Form/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Enter the person you want to Talk with and the message you want to send
+          and Press Submit.
         </p>
         <a
           className="App-link"
@@ -15,7 +32,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Source Code <br/> Github
         </a>
       </header>
     </div>
